@@ -9,8 +9,7 @@ WEBRTC_CLIENT_SETTINGS = ClientSettings(
 
 webrtc_ctx = webrtc_streamer(
     key="audio-filter",
-    mode=WebRtcMode.SENDRECV,
-    client_settings=WEBRTC_CLIENT_SETTINGS,
+    mode=WebRtcMode.SENDRECV
 )
 
 
