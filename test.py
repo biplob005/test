@@ -1,19 +1,9 @@
+
 import streamlit as st
-from streamlit_webrtc import (
-    AudioProcessorBase,
-    ClientSettings,
-    VideoProcessorBase,
-    WebRtcMode,
-    webrtc_streamer,
-)
 
-
-
-
-webrtc_ctx = webrtc_streamer(
-    key="audio-filter",
-    mode=WebRtcMode.SENDRECV
-)
+from streamlit_webrtc import webrtc_streamer
+st.title('hello world')
+webrtc_streamer(key="example")
 
 
 
